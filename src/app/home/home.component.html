@@ -1,4 +1,10 @@
-<p>home works!</p>
+<h1 class="center">{{header}}</h1>
+
+<mat-form-field class="full-width">
+  <mat-label>Überschrift ändern</mat-label>
+  <input matInput [(ngModel)]="header">
+</mat-form-field>
 
 <p>Today is {{today | date}}</p>
 <p>Time is {{today | date:'h:mm:ss'}}</p>
+

@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   today: number | undefined;
   private timeServiceSub: Subscription;
 
+  public header: string = 'Hallo';
+
   constructor(private timeService: TimeService) {
     this.timeServiceSub = this.timeService.subscribe(now => {
       this.today = now;

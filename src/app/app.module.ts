@@ -11,6 +11,9 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import {MatRadioModule} from "@angular/material/radio";
 import { HighlightDirective } from './highlight.directive';
+import {FormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HighlightDirective } from './highlight.directive';
     MatSliderModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatRadioModule
+    MatRadioModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
