@@ -1,0 +1,10 @@
+<h3>Wähle eine Highlight Farbe:</h3>
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button (click)="color='red'" value="1">Rot</mat-radio-button>
+  <mat-radio-button (click)="color='green'" value="2">Grün</mat-radio-button>
+  <mat-radio-button (click)="color='blue'" value="3">Blau</mat-radio-button>
+</mat-radio-group>
+<hr/>
+
+<p [appHighlight]="color" defaultColor="yellow">Hover über mich</p>
+
