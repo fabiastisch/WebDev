@@ -14,6 +14,7 @@ import { HighlightDirective } from './highlight.directive';
 import {FormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import {MatInputModule} from "@angular/material/input";
     HomeComponent,
     FirstComponent,
     SecondComponent,
-    HighlightDirective
+    HighlightDirective,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, // CLI adds AppRoutingModule to the AppModule's imports array
     MatSliderModule,
     BrowserAnimationsModule,
     NgbModule,
