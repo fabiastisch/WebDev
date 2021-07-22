@@ -9,7 +9,7 @@ const routes: Routes = [ // sets up routes constant where you define your routes
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: 'home', component: HomeComponent},
   {path: 'first', component: FirstComponent},
-  {path: 'second', component: SecondComponent, data: { title: 'Second'}},
+  {path: 'second', component: SecondComponent},
   {path: '1', redirectTo: '/first'},
   {path: '2', redirectTo: '/second'},
   {path: 'list/:id', component: SecondComponent},
