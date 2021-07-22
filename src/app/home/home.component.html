@@ -6,5 +6,16 @@
 </mat-form-field>
 
 <p>Today is {{today | date}}</p>
-<p>Time is {{today | date:'h:mm:ss'}}</p>
+<button mat-flat-button color="primary" (click)="showTime = !showTime">{{showTime? 'Hide Time' : 'Show Time'}}</button>
+<p *ngIf="showTime" class="mt-2">Time is {{today | date:'h:mm:ss'}}</p>
 
+<div class="mt-3">
+  <mat-form-field>
+  <mat-label>Count to</mat-label>
+  <input type="number" max="5000" matInput [(ngModel)]="countNumber" (ngModelChange)="validateNumber($event)">
+</mat-form-field>
+</div>
+
+<div *ngFor="let item of getArray(countNumber)">
+  {{item}}
+</div>
